@@ -1,0 +1,373 @@
+ body{
+    background-color:#cbd4ce;
+    background-image: url(img/body.image.jpg);
+}
+
+    html{
+    font-family: 'Quicksand', sans-serif;
+    color:#1a1a1a;
+}
+.background {
+   background:#d8d8d8;
+   background:rgba(216, 216, 216, 0.7);
+
+}
+.background-text{
+    background:rgb(216, 216,216, 0.7);
+    color:black;
+    text-align: center;
+    font-size:2em;
+    padding:1.5em;
+    border-radius: 10px;
+    width:100%;
+}
+.background-text:hover {
+    background:rgb(133, 175, 224,0.5);
+}
+header{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+header h1{
+    margin:0;
+    padding:15px;
+
+}
+a{
+    text-decoration:none;
+    color:#1a1a1a;
+    font-weight: bold;
+}
+li{
+    list-style:none;
+    padding:10px;
+    display:inline-block;
+}
+ul{
+    padding:0;
+    margin:-40px 11px;
+    
+}
+
+label{
+    position: relative;
+    top:-40px;
+    left:30px;
+    margin:0px 40px 0 0;
+    font-size:25px;
+    display:none;
+
+}
+@media only screen and (max-width:700px){
+    label{
+        display:block;
+        cursor:pointer;
+        position:relative;
+        left:200px;
+    }
+    .menu{
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    .menu a{
+        display:block;
+        border-bottom:1px solid #EAEAEABF;
+        margin:0;
+    }
+    #toggle:checked + .menu {
+        display:block;
+        position:relative;
+        bottom:10px;
+    }
+   
+}
+ul li a{
+    position: relative;
+    bottom:10px;
+}
+
+
+.lessebo-united-image{
+    background: url(img/fotball.header.jpg)no-repeat center fixed;
+    min-height:100vh;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.wrapper {
+    display:flex;
+    flex-direction:column;
+}
+article, .sidebar-widget{
+    padding: 15px;
+    margin: 15px 0;
+}
+article > header {
+background:#d8d8d8;
+}
+img{
+    width:100%;
+}
+#fotball.news {
+    display:flex;
+    justify-content: flex-start;
+}
+ article section p{
+  display:flex;
+   text-align:right;
+   justify-content: flex-end;
+   bottom:100px;
+}
+
+i {
+    margin: 0px 5px;
+}
+ul li a:hover {
+    color: red;
+    border:1px solid white;
+    border-radius:8px;
+    padding:5px;
+}
+.header-name:hover{
+    color:red;
+}
+
+td:nth-child(2) {
+    padding-left:30px;
+}
+.divimage{
+    margin: 0 100px;
+}
+.news-p{
+    margin:0 100px;
+}
+
+.image-p-news{margin:0;padding:0;}
+.Team-name {
+ background-color:white;
+ width:100%;
+ height:100px;
+ animation-name:myanimation;
+ animation-duration:10s; 
+ animation-iteration-count: infinite; 
+}
+footer{
+    background-color:black;
+}
+.map{
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.info{
+    color:white;    
+}
+.info:hover{
+    color:blue;
+    margin:1px;
+}
+.media-footer{
+    display:flex;
+    background:rgb(43, 38, 38);
+    justify-content: center;
+ 
+    border-radius: 6px;
+  
+    margin:10px 400px;
+   
+    
+}
+i{
+    color:white;
+}
+
+
+
+
+.login-background{
+    background:grey;
+    font-family:sans-serif;
+}
+.box{
+    width:300px;
+    padding:40px;
+    background:rgb(133, 175, 224,0.5);
+    text-align:center;
+}
+.box h1{
+color:white;
+text-transform:uppercase;
+font-weight:200;
+}
+.box input[type = "password"],.box input[type = "text"]{
+border:0;
+background:none;
+display:block;
+margin :20px auto;
+text-align:center;
+border:2px solid black;
+padding:14px 10px;
+width:200px;
+outline:none;
+color:white;
+border-radius:24px;
+transition:1s;
+}
+.box input[type = "password"]:focus,.box input[type = "text"]:focus{
+    width:280px;
+    border-color:red;
+}
+.box input[type = "submit"]{
+    border:0;
+background:none;
+display:block;
+margin :20px auto;
+text-align:center;
+border:2px solid black;
+padding:14px 50px;
+width:200px;
+outline:none;
+color:white;
+border-radius:24px;
+transition:1s;
+cursor:pointer;
+}
+.box input[type = "submit"]:hover{
+    background-color:red;
+}
+.box input[type = "text"]:focus, .box input[type="password"]:focus{
+    background:	rgb(255,0,0,0.1);
+    color:black;
+}
+
+
+
+
+
+
+
+@keyframes myanimation {
+    0% {background-color:white;}
+    25% {background-color:rgb(64, 64, 168)}
+    35%{background-color:white;}
+    50% {background-color:rgb(64, 64, 168)}
+    75% {background-color:blue;}
+    85% {background-color:rgb(64, 64, 168);}
+    100%{background-color:white;}
+}
+
+@media (min-width:500px) {
+    body{
+        max-width:1600px;
+        margin:0 auto;
+    }
+   
+    /* blog*/
+    .wrapper {
+        flex-direction:row;
+    }
+    main {
+        flex: 4;
+    }
+    aside {
+
+
+        flex: 1;
+        margin-left:10px;
+          
+        
+    }
+    article > header {
+        justify-content:space-around;
+    }
+    
+}
+@media(min-width:1000px){
+    header{
+        flex-direction: row;
+    }
+    header h1, h2, header nav{
+        font-style:italic;
+        flex: 1;
+
+    }
+    header h1{
+        text-align: left;
+    }
+    header nav{
+        text-align: right;
+    }
+}
+
+
+
+@media(min-width:1216px){
+    .background-text{
+        font-size: 30px;
+    }
+}
+@media(min-width:1000px){
+    .background-text{
+        width:100%;
+    }
+}
+@media(min-width:904px){
+    .background-text{
+        font-size:25px;
+    }
+}
+@media(min-width:432px){
+    .background-text{
+        font-size:25px;
+    }
+}
+
+@media(min-width:350px){
+    .background-text{
+        font-size:25px;
+       
+    }
+}
+@media(min-width:219px){
+    .background-text{
+        font-size:25px;
+       
+    }
+}
+@media(min-width:451px){
+    .background-text{
+        width:100%;
+    }
+}
+
+@media(min-width:400px){
+    .background-text{
+        width:100%;
+        
+    }
+}
+@media(min-width:1000px){
+     li a{
+      font-size:20px;
+    }
+}
+@media(min-width:320px){
+   .wrapper {
+        width:100%;
+    }
+}
+@media(min-width:370px){
+    .background-text{
+        width:75%;
+        
+    }
+}
+
+
+
+
+  
+

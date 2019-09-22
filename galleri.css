@@ -1,0 +1,130 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+    color:#1a1a1a;
+}
+
+
+.background {
+   background:#d8d8d8;
+   background:rgba(216, 216, 216, 0.4);
+
+}
+
+header{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+header h1{
+    margin:0;
+    padding:15px;
+
+}
+a{
+    text-decoration:none;
+    color:#1a1a1a;
+    font-weight: bold;
+}
+li{
+    list-style:none;
+    padding:10px;
+    display:inline-block;
+}
+ul{
+    padding:0;
+    margin:-25px;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction:column;
+}
+
+article > header {
+background:#d8d8d8;
+}
+img{
+    width:100%;
+}
+
+ 
+ul li a:hover {
+    color: red;
+    border:1px solid white;
+    border-radius:8px;
+    padding:5px;
+}
+.header-name:hover{
+    color:red;
+}
+
+
+.gallery-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows:355px 355px;
+    grid-column-gap:0.5rem;
+}
+.gallery-wrapper img{
+    width:100%;
+    height:350px;
+}
+
+
+.nav-color {
+    background-color:white;
+    width:100%;
+    height:100px;
+    animation-name:myanimation;
+    animation-duration:10s; 
+    animation-iteration-count: infinite; 
+   }
+   @keyframes myanimation {
+       0% {background-color:white;}
+       25% {background-color:rgb(64, 64, 168)}
+       35%{background-color:white;}
+       50% {background-color:rgb(64, 64, 168)}
+       75% {background-color:blue;}
+       85% {background-color:rgb(64, 64, 168);}
+       100%{background-color:white;}
+   }
+
+
+
+
+
+   .lab{
+    position: relative;
+    top:-40px;
+    left:30px;
+    margin:0px 40px 0 0;
+    font-size:25px;
+    display:none;
+
+}
+@media only screen and (max-width:800px){
+    .lab{
+        display:block;
+        cursor:pointer;
+        position:relative;
+        left:200px;
+    }
+    .menu{
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    .menu a{
+        display:block;
+        border-bottom:1px solid #EAEAEABF;
+        margin:0;
+    }
+    #toggle:checked + .menu {
+        display:block;
+        position:relative;
+        bottom:45px;
+    }
+   
+}
